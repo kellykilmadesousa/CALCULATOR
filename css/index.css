@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* border-box faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura.*/
+}
+
+body{
+    background-color: rgb(140, 166, 222);
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.box{
+    position: absolute;
+    background-color: rgba(52, 106, 110, 0.546);
+    top: 50%;  /*O "top" posiciona o elemento em um coordenada, o margin-top usa como referencia os "irmãos" do objeto em questão*/
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.31) ;
+    color: #ffffff;
+}
+
+button:hover{
+    background-color: rgb(224, 220, 206);
+    transition: 1.2s;
+}
+
+.simbolo-igual{
+    height: 122px;
+    background-color: rgb(176, 78, 78);
+}
+
+.simbolo-zero{
+    width: 122px;
+}
+
+.tela{
+    background-color: #ffffff;
+    height: 50px;
+    color: black;
+    font-size: 35px;
+    text-align: end;
+    margin: 3px;
+}

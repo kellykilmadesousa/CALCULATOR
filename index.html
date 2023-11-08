@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <main>
+        <div class="box">
+            <h1>Calculadora</h1>
+            <div class="tela"></div>
+            <table>
+                <tr>
+                    <td><button onclick="limpar()">C</button></td>
+                    <td><button><</button></td>
+                    <td><button onclick="inserir('/')">/</button></td>
+                    <td><button onclick="inserir('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="inserir('7')">7</button></td>
+                    <td><button onclick="inserir('8')">8</button></td>
+                    <td><button onclick="inserir('9')">9</button></td>
+                    <td><button onclick="inserir('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="inserir('4')">4</button></td>
+                    <td><button onclick="inserir('5')">5</button></td>
+                    <td><button onclick="inserir('6')">6</button></td>
+                    <td><button onclick="inserir('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="inserir('1')">1</button></td>
+                    <td><button onclick="inserir('2')">2</button></td>
+                    <td><button onclick="inserir('3')">3</button></td>
+                    <td rowspan="2"><button class="simbolo-igual">=</button></td> 
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="inserir('0')" class="simbolo-zero">0</button></td>
+                    <td><button onclick="inserir('.')">.</button></td>
+                </tr>
+            </table>
+            <span>&copy; Kelly Kilma</span>
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
